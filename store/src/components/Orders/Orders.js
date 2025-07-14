@@ -25,7 +25,7 @@ export default function Orders() {
     }
   
     try {
-      const response = await fetch('http://localhost:4000/checkout', {
+      const response = await fetch('https://cake-nook-react.vercel.app/checkout', {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: cartItems, user })
