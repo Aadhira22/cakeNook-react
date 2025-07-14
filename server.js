@@ -11,7 +11,7 @@ const jwt = require("jsonwebtoken");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY || "sk_test_...");
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "https://cake-nook-react.vercel.app", credentials: true }));
 app.use(express.static("public"));
 app.use(express.json());
 
