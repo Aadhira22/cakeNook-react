@@ -118,7 +118,7 @@ export default function StateContextProvider({ children }) {
   // --- AUTH: Register ---
   const register = async (name, email, password, confirmPassword) => {
     try {
-      const res = await axios.post('http://localhost:4000/api/auth/register', {
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/register`, {
         name,
         email,
         password,
@@ -136,7 +136,7 @@ export default function StateContextProvider({ children }) {
   // --- AUTH: Login ---
   const login = async (email, password) => {
     try {
-      const res = await fetch('http://localhost:4000/api/auth/login', {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
