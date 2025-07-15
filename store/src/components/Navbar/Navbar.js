@@ -40,7 +40,7 @@ const Navbar = () => {
 
         {/* Mobile nav menu */}
         <div
-          className={`absolute w-1/4 text-center top-full left-0 bg-white shadow-md rounded p-4 space-y-4 md:hidden transition-all duration-300 ${
+          className={`absolute w-1/3 text-center top-full left-0 bg-white shadow-md rounded p-4 space-y-4 md:hidden transition-all duration-300 ${
             isNavOpen ? 'block' : 'hidden'
           }`}
         >
