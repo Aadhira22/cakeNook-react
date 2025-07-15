@@ -1,5 +1,3 @@
-Here's a polished and structured **README.md** for your *cakeNook-react* project:
-
 ---
 
 # 🍰 cakeNook
